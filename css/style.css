@@ -8,6 +8,7 @@
 body {
     font-family: Roboto;
     color: var(--primary-text-color);
+    background-color: white;
 }
 
 
@@ -31,7 +32,7 @@ ul {
 }
 
 .logo-footer {
-    /*color: white;*/
+    color: white;
 }
 
 .link {
@@ -47,10 +48,18 @@ ul {
     size: 14px;
 }
 
-.nav,
-.link:hover .nav,
-.link:focus {
+.nav, .link:hover, 
+.nav, .link:focus {
     color: var(--accent-color);
+
+}
+
+.section-hero, 
+.section-footer {
+    background: #2F303A;
+}
+.section-team {
+    background-color: var(--background-color);
 }
 
 .hero {
@@ -58,10 +67,12 @@ ul {
     font-size: 44px;
     line-height: 60px;
     text-align: center;
-    /*color: white;*/
+    color: white;
+    text-transform: uppercase;
 }
 
 .hero-button {
+    font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -72,6 +83,10 @@ ul {
     background-color: var(--accent-color);
     cursor: pointer;
 }
+.btn-hero:hover,
+.btn-hero:focus {
+    color: #188CE8;
+}
 
 .section-title {
     font-weight: 700;
@@ -79,6 +94,9 @@ ul {
     line-height: 1.1;
     text-align: center;
     color: var(--primary-text-color);
+}
+.hidden {
+    visibility: hidden;
 }
 
 /* особенности*/
@@ -88,6 +106,7 @@ ul {
     font-size: 14px;
     line-height: 1.1;
     color: var(--primary-text-color);
+    text-transform: uppercase;
 }
 
 .text {
@@ -98,6 +117,9 @@ ul {
 }
 
 /* команда*/
+.team-card {
+    background-color: white;
+}
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -120,11 +142,11 @@ ul {
     font-size: 14px;
     line-height: 24px;
     text-decoration: none;
-    /*color: rgba(255, 255, 255, 0.6);*/
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .adress {
-    /*color: white;*/
+    color: white;
 }
 
 
@@ -154,6 +176,7 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    cursor: pointer;
 }
 
 .btn.btn-link:hover {
